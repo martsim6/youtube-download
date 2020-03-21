@@ -20,3 +20,5 @@ python3 ./index.py
 
 Save file with custom path
 python3 ./index.py -p ~/path/to/custom/dir/
+
+Saving sound in mp4 format.
