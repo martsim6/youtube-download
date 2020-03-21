@@ -6,7 +6,7 @@ from pathlib import Path
 
 def set_arguments():
 	parser = argparse.ArgumentParser()
-	parser.add_argument('--path', help="Set path where to save downloading sound. Default = '~/Download/'", action='store_true')
+	parser.add_argument('-p', '--path', help="Set path where to save downloading sound. Default = '~/Download/'")
 	args = parser.parse_args()
 	return args
 
