@@ -1,7 +1,15 @@
 import pytube
 import subprocess
 import re
-import requests
+import argparse
+from pathlib import Path
+
+def set_arguments():
+	parser = argparse.ArgumentParser()
+	parser.add_argument('--path', help="Set path where to save downloading sound. Default = '~/Download/'", action='store_true')
+	args = parser.parse_args()
+	return args
+
 
 def get_opened_urls():
 	command = ['bt', 'list']
@@ -26,9 +34,12 @@ def download_sound(url, path):
 
 
 if __name__ == '__main__':
+	args = set_arguments()
 	urls = get_opened_urls()
 	if urls:
 		for url in urls:
-			download_sound(url, './')
+			home_path = str(Path.home())
+			path = args.path if args.path  else '{}/Downloads/'.format(home_path)
+			download_sound(url, path)
 	else:
 		print('No Youtube tabs currently opened in firefox. Can`t download anything')
