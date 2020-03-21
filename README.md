@@ -1,6 +1,6 @@
 ## Download sound form opened youtube video in firefox
 
-###Works on firefox only with brotab extension.
+### Works on firefox only with brotab extension.
 
 #### Brotab: 
 
