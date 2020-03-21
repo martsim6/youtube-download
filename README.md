@@ -5,10 +5,13 @@
 #### Brotab: 
 
 For terminal use:
+
 `pip/pip3 install brotab` more here: (https://pypi.org/project/brotab/)
+
 `bt install`
 
 Mozila extension:
+
 > https://addons.mozilla.org/en-US/firefox/addon/brotab/
 
 **Both needed for making script runnable.**
