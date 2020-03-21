@@ -15,10 +15,10 @@ Saving sound in mp4 format.
 
 Example: 
 
-Save file to ~/Downloads/
+Save file to ~/Downloads/:
 python3 ./index.py
 
-Save file with custom path
+Save file with custom path:
 python3 ./index.py -p ~/path/to/custom/dir/
 
 Saving sound in mp4 format.
