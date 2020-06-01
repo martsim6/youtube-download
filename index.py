@@ -22,7 +22,7 @@ def get_opened_urls():
 		return None
 	
 
-def download_sound(url, path):	
+def download_sound(url, path):
 	youtube_video = pytube.YouTube(url)
 	try:
 		sound = youtube_video.streams.filter(only_audio=True).first()
